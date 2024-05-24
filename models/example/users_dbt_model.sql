@@ -15,4 +15,4 @@ select
     {{ json_extract_scalar('_airbyte_data', ['organization']) }} as organization,
     {{ json_extract_scalar('_airbyte_data', ['onboardingStep']) }} as onboarding_step,
     _airbyte_emitted_at
-from {{ source('public', 'users') }}
+from {{ source('public', '_airbyte_raw_users') }}
