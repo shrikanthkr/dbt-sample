@@ -9,5 +9,5 @@ pgmigrate:
       port: 5432
       dbname: postgres
       schema: public
-      threads: 4
+      threads: 2
       keepalives_idle: 0

@@ -1,4 +1,9 @@
-{{ config(alias="users_scalar", schema="_airbyte_quarantine", tags=["top-level-intermediate"]) }}
+
+  create view "postgres"."public__airbyte_quarantine"."users_scalar__dbt_tmp"
+    
+    
+  as (
+    
 -- SQL model to parse JSON blob stored in a single column and extract into separated field columns as described by the JSON Schema
 
 select
@@ -16,3 +21,4 @@ select
     _airbyte_data ['onboardingStep']  as onboarding_step,
     _airbyte_emitted_at
 from public._airbyte_raw_users
+  );
