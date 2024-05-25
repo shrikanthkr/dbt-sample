@@ -1209,3 +1209,388 @@ where id is null
 [0m15:27:45.807068 [debug] [MainThread]: Command `dbt deps` succeeded at 15:27:45.806996 after 3.50 seconds
 [0m15:27:45.807368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10283b730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10497d2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104991790>]}
 [0m15:27:45.807619 [debug] [MainThread]: Flushing usage events
+[0m15:32:13.813602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10643aa00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108450e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084506a0>]}
+
+
+============================== 15:32:13.816211 | c1dadfc8-d03c-479a-a653-9b46a75920e9 ==============================
+[0m15:32:13.816211 [info ] [MainThread]: Running with dbt=1.8.1
+[0m15:32:13.816636 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/shrikanth/Shrikanth/dbt-helloworld', 'log_path': '/Users/shrikanth/Shrikanth/dbt-helloworld/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt build', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:32:13.973515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c1dadfc8-d03c-479a-a653-9b46a75920e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108771670>]}
+[0m15:32:14.001309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c1dadfc8-d03c-479a-a653-9b46a75920e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108942580>]}
+[0m15:32:14.001982 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m15:32:14.015441 [debug] [MainThread]: checksum: ebc509fb14e151ea268e89b60fd5abf912ed99129f87516462718fa2f14f4838, vars: {}, profile: , target: , version: 1.8.1
+[0m15:32:14.016035 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:32:14.016318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c1dadfc8-d03c-479a-a653-9b46a75920e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108959d00>]}
+[0m15:32:14.809052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c1dadfc8-d03c-479a-a653-9b46a75920e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090eb130>]}
+[0m15:32:14.878152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c1dadfc8-d03c-479a-a653-9b46a75920e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090f1430>]}
+[0m15:32:14.878496 [info ] [MainThread]: Found 3 models, 4 data tests, 527 macros
+[0m15:32:14.879456 [info ] [MainThread]: 
+[0m15:32:14.879807 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:32:14.881939 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:32:14.882303 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:32:14.910968 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:32:14.911268 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:32:14.911538 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "pgmigrate", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:32:14.911777 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "pgmigrate", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:32:14.912001 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:32:14.912209 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:32:15.030052 [debug] [ThreadPool]: SQL status: SELECT 18 in 0.0 seconds
+[0m15:32:15.030554 [debug] [ThreadPool]: SQL status: SELECT 18 in 0.0 seconds
+[0m15:32:15.031815 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:32:15.032819 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:32:15.034092 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now list_postgres_public)
+[0m15:32:15.034642 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now list_postgres_public__airbyte_quarantine)
+[0m15:32:15.040298 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m15:32:15.042798 [debug] [ThreadPool]: Using postgres connection "list_postgres_public__airbyte_quarantine"
+[0m15:32:15.043143 [debug] [ThreadPool]: On list_postgres_public: BEGIN
+[0m15:32:15.043459 [debug] [ThreadPool]: On list_postgres_public__airbyte_quarantine: BEGIN
+[0m15:32:15.043763 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:32:15.044056 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:32:15.049680 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:32:15.050003 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:32:15.050339 [debug] [ThreadPool]: Using postgres connection "list_postgres_public__airbyte_quarantine"
+[0m15:32:15.050680 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m15:32:15.051028 [debug] [ThreadPool]: On list_postgres_public__airbyte_quarantine: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "pgmigrate", "target_name": "dev", "connection_name": "list_postgres_public__airbyte_quarantine"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public__airbyte_quarantine'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public__airbyte_quarantine'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public__airbyte_quarantine'
+  
+[0m15:32:15.051400 [debug] [ThreadPool]: On list_postgres_public: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "pgmigrate", "target_name": "dev", "connection_name": "list_postgres_public"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m15:32:15.058439 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:32:15.058779 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m15:32:15.059771 [debug] [ThreadPool]: On list_postgres_public__airbyte_quarantine: ROLLBACK
+[0m15:32:15.060846 [debug] [ThreadPool]: On list_postgres_public: ROLLBACK
+[0m15:32:15.061367 [debug] [ThreadPool]: On list_postgres_public__airbyte_quarantine: Close
+[0m15:32:15.061670 [debug] [ThreadPool]: On list_postgres_public: Close
+[0m15:32:15.066034 [debug] [MainThread]: Using postgres connection "master"
+[0m15:32:15.066352 [debug] [MainThread]: On master: BEGIN
+[0m15:32:15.066630 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:32:15.071574 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:32:15.071889 [debug] [MainThread]: Using postgres connection "master"
+[0m15:32:15.072257 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "pgmigrate", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:32:15.096099 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:32:15.097131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1dadfc8-d03c-479a-a653-9b46a75920e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109251d90>]}
+[0m15:32:15.097587 [debug] [MainThread]: On master: ROLLBACK
+[0m15:32:15.098056 [debug] [MainThread]: Using postgres connection "master"
+[0m15:32:15.098394 [debug] [MainThread]: On master: BEGIN
+[0m15:32:15.098916 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:32:15.099248 [debug] [MainThread]: On master: COMMIT
+[0m15:32:15.099573 [debug] [MainThread]: Using postgres connection "master"
+[0m15:32:15.099892 [debug] [MainThread]: On master: COMMIT
+[0m15:32:15.100296 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:32:15.100627 [debug] [MainThread]: On master: Close
+[0m15:32:15.101007 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:32:15.101334 [info ] [MainThread]: 
+[0m15:32:15.102936 [debug] [Thread-1  ]: Began running node model.pgmigrate.my_first_dbt_model
+[0m15:32:15.103415 [debug] [Thread-2  ]: Began running node model.pgmigrate.users_dbt_model
+[0m15:32:15.103886 [info ] [Thread-1  ]: 1 of 7 START sql table model public.my_first_dbt_model ......................... [RUN]
+[0m15:32:15.104347 [info ] [Thread-2  ]: 2 of 7 START sql view model public__airbyte_quarantine.users_scalar ............ [RUN]
+[0m15:32:15.104772 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_postgres_public, now model.pgmigrate.my_first_dbt_model)
+[0m15:32:15.105168 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly list_postgres_public__airbyte_quarantine, now model.pgmigrate.users_dbt_model)
+[0m15:32:15.105528 [debug] [Thread-1  ]: Began compiling node model.pgmigrate.my_first_dbt_model
+[0m15:32:15.105875 [debug] [Thread-2  ]: Began compiling node model.pgmigrate.users_dbt_model
+[0m15:32:15.112587 [debug] [Thread-1  ]: Writing injected SQL for node "model.pgmigrate.my_first_dbt_model"
+[0m15:32:15.118085 [debug] [Thread-1  ]: Began executing node model.pgmigrate.my_first_dbt_model
+[0m15:32:15.145495 [debug] [Thread-1  ]: Writing runtime sql for node "model.pgmigrate.my_first_dbt_model"
+[0m15:32:15.146309 [debug] [Thread-1  ]: Using postgres connection "model.pgmigrate.my_first_dbt_model"
+[0m15:32:15.146670 [debug] [Thread-1  ]: On model.pgmigrate.my_first_dbt_model: BEGIN
+[0m15:32:15.146992 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:32:15.149344 [debug] [Thread-2  ]: Compilation Error in model users_dbt_model (models/example/users_dbt_model.sql)
+  'json_extract_scalar' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m15:32:15.150297 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c1dadfc8-d03c-479a-a653-9b46a75920e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107880a90>]}
+[0m15:32:15.150729 [error] [Thread-2  ]: 2 of 7 ERROR creating sql view model public__airbyte_quarantine.users_scalar ... [[31mERROR[0m in 0.04s]
+[0m15:32:15.151133 [debug] [Thread-2  ]: Finished running node model.pgmigrate.users_dbt_model
+[0m15:32:15.151387 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:32:15.151767 [debug] [Thread-1  ]: Using postgres connection "model.pgmigrate.my_first_dbt_model"
+[0m15:32:15.152040 [debug] [Thread-1  ]: On model.pgmigrate.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "pgmigrate", "target_name": "dev", "node_id": "model.pgmigrate.my_first_dbt_model"} */
+
+  
+    
+
+  create  table "postgres"."public"."my_first_dbt_model__dbt_tmp"
+  
+  
+    as
+  
+  (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+  
+[0m15:32:15.158442 [debug] [Thread-1  ]: SQL status: SELECT 2 in 0.0 seconds
+[0m15:32:15.162877 [debug] [Thread-1  ]: Using postgres connection "model.pgmigrate.my_first_dbt_model"
+[0m15:32:15.163174 [debug] [Thread-1  ]: On model.pgmigrate.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "pgmigrate", "target_name": "dev", "node_id": "model.pgmigrate.my_first_dbt_model"} */
+alter table "postgres"."public"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+[0m15:32:15.163951 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:32:15.165941 [debug] [Thread-1  ]: Using postgres connection "model.pgmigrate.my_first_dbt_model"
+[0m15:32:15.166200 [debug] [Thread-1  ]: On model.pgmigrate.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "pgmigrate", "target_name": "dev", "node_id": "model.pgmigrate.my_first_dbt_model"} */
+alter table "postgres"."public"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m15:32:15.166905 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:32:15.180012 [debug] [Thread-1  ]: On model.pgmigrate.my_first_dbt_model: COMMIT
+[0m15:32:15.180361 [debug] [Thread-1  ]: Using postgres connection "model.pgmigrate.my_first_dbt_model"
+[0m15:32:15.180616 [debug] [Thread-1  ]: On model.pgmigrate.my_first_dbt_model: COMMIT
+[0m15:32:15.181603 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:32:15.185658 [debug] [Thread-1  ]: Applying DROP to: "postgres"."public"."my_first_dbt_model__dbt_backup"
+[0m15:32:15.188301 [debug] [Thread-1  ]: Using postgres connection "model.pgmigrate.my_first_dbt_model"
+[0m15:32:15.188581 [debug] [Thread-1  ]: On model.pgmigrate.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "pgmigrate", "target_name": "dev", "node_id": "model.pgmigrate.my_first_dbt_model"} */
+drop table if exists "postgres"."public"."my_first_dbt_model__dbt_backup" cascade
+[0m15:32:15.199601 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:32:15.201150 [debug] [Thread-1  ]: On model.pgmigrate.my_first_dbt_model: Close
+[0m15:32:15.201536 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c1dadfc8-d03c-479a-a653-9b46a75920e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10964b8b0>]}
+[0m15:32:15.201947 [info ] [Thread-1  ]: 1 of 7 OK created sql table model public.my_first_dbt_model .................... [[32mSELECT 2[0m in 0.10s]
+[0m15:32:15.202329 [debug] [Thread-1  ]: Finished running node model.pgmigrate.my_first_dbt_model
+[0m15:32:15.202800 [debug] [Thread-4  ]: Began running node test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710
+[0m15:32:15.203100 [debug] [Thread-3  ]: Began running node test.pgmigrate.unique_my_first_dbt_model_id.16e066b321
+[0m15:32:15.203434 [info ] [Thread-4  ]: 3 of 7 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m15:32:15.203720 [info ] [Thread-3  ]: 4 of 7 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m15:32:15.204073 [debug] [Thread-4  ]: Acquiring new postgres connection 'test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m15:32:15.204388 [debug] [Thread-3  ]: Acquiring new postgres connection 'test.pgmigrate.unique_my_first_dbt_model_id.16e066b321'
+[0m15:32:15.204638 [debug] [Thread-4  ]: Began compiling node test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710
+[0m15:32:15.204907 [debug] [Thread-3  ]: Began compiling node test.pgmigrate.unique_my_first_dbt_model_id.16e066b321
+[0m15:32:15.212550 [debug] [Thread-4  ]: Writing injected SQL for node "test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m15:32:15.217613 [debug] [Thread-3  ]: Writing injected SQL for node "test.pgmigrate.unique_my_first_dbt_model_id.16e066b321"
+[0m15:32:15.218164 [debug] [Thread-4  ]: Began executing node test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710
+[0m15:32:15.218424 [debug] [Thread-3  ]: Began executing node test.pgmigrate.unique_my_first_dbt_model_id.16e066b321
+[0m15:32:15.226871 [debug] [Thread-4  ]: Writing runtime sql for node "test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m15:32:15.228472 [debug] [Thread-3  ]: Writing runtime sql for node "test.pgmigrate.unique_my_first_dbt_model_id.16e066b321"
+[0m15:32:15.228982 [debug] [Thread-3  ]: Using postgres connection "test.pgmigrate.unique_my_first_dbt_model_id.16e066b321"
+[0m15:32:15.229255 [debug] [Thread-4  ]: Using postgres connection "test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m15:32:15.229485 [debug] [Thread-3  ]: On test.pgmigrate.unique_my_first_dbt_model_id.16e066b321: BEGIN
+[0m15:32:15.229732 [debug] [Thread-4  ]: On test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710: BEGIN
+[0m15:32:15.229972 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m15:32:15.230198 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m15:32:15.235635 [debug] [Thread-3  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:32:15.235865 [debug] [Thread-4  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:32:15.236130 [debug] [Thread-3  ]: Using postgres connection "test.pgmigrate.unique_my_first_dbt_model_id.16e066b321"
+[0m15:32:15.236371 [debug] [Thread-4  ]: Using postgres connection "test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m15:32:15.236620 [debug] [Thread-3  ]: On test.pgmigrate.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "pgmigrate", "target_name": "dev", "node_id": "test.pgmigrate.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "postgres"."public"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m15:32:15.236879 [debug] [Thread-4  ]: On test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "pgmigrate", "target_name": "dev", "node_id": "test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "postgres"."public"."my_first_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:32:15.240155 [debug] [Thread-4  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:32:15.240394 [debug] [Thread-3  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:32:15.242487 [debug] [Thread-4  ]: On test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710: ROLLBACK
+[0m15:32:15.243443 [debug] [Thread-3  ]: On test.pgmigrate.unique_my_first_dbt_model_id.16e066b321: ROLLBACK
+[0m15:32:15.243899 [debug] [Thread-3  ]: On test.pgmigrate.unique_my_first_dbt_model_id.16e066b321: Close
+[0m15:32:15.244158 [debug] [Thread-4  ]: On test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m15:32:15.244524 [info ] [Thread-3  ]: 4 of 7 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 0.04s]
+[0m15:32:15.244946 [error] [Thread-4  ]: 3 of 7 FAIL 1 not_null_my_first_dbt_model_id ................................... [[31mFAIL 1[0m in 0.04s]
+[0m15:32:15.245334 [debug] [Thread-3  ]: Finished running node test.pgmigrate.unique_my_first_dbt_model_id.16e066b321
+[0m15:32:15.245668 [debug] [Thread-4  ]: Finished running node test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710
+[0m15:32:15.246170 [debug] [Thread-1  ]: Began running node model.pgmigrate.my_second_dbt_model
+[0m15:32:15.246441 [info ] [Thread-1  ]: 5 of 7 SKIP relation public.my_second_dbt_model ................................ [[33mSKIP[0m]
+[0m15:32:15.246735 [debug] [Thread-1  ]: Finished running node model.pgmigrate.my_second_dbt_model
+[0m15:32:15.247241 [debug] [Thread-3  ]: Began running node test.pgmigrate.not_null_my_second_dbt_model_id.151b76d778
+[0m15:32:15.247521 [debug] [Thread-4  ]: Began running node test.pgmigrate.unique_my_second_dbt_model_id.57a0f8c493
+[0m15:32:15.247765 [info ] [Thread-3  ]: 6 of 7 SKIP test not_null_my_second_dbt_model_id ............................... [[33mSKIP[0m]
+[0m15:32:15.248063 [info ] [Thread-4  ]: 7 of 7 SKIP test unique_my_second_dbt_model_id ................................. [[33mSKIP[0m]
+[0m15:32:15.248352 [debug] [Thread-3  ]: Finished running node test.pgmigrate.not_null_my_second_dbt_model_id.151b76d778
+[0m15:32:15.248596 [debug] [Thread-4  ]: Finished running node test.pgmigrate.unique_my_second_dbt_model_id.57a0f8c493
+[0m15:32:15.249249 [debug] [MainThread]: Using postgres connection "master"
+[0m15:32:15.249450 [debug] [MainThread]: On master: BEGIN
+[0m15:32:15.249639 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:32:15.254307 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:32:15.254545 [debug] [MainThread]: On master: COMMIT
+[0m15:32:15.254758 [debug] [MainThread]: Using postgres connection "master"
+[0m15:32:15.254958 [debug] [MainThread]: On master: COMMIT
+[0m15:32:15.255265 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:32:15.255500 [debug] [MainThread]: On master: Close
+[0m15:32:15.255774 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:32:15.255985 [debug] [MainThread]: Connection 'model.pgmigrate.my_first_dbt_model' was properly closed.
+[0m15:32:15.256175 [debug] [MainThread]: Connection 'model.pgmigrate.users_dbt_model' was properly closed.
+[0m15:32:15.256367 [debug] [MainThread]: Connection 'test.pgmigrate.not_null_my_first_dbt_model_id.5fb22c2710' was properly closed.
+[0m15:32:15.256573 [debug] [MainThread]: Connection 'test.pgmigrate.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m15:32:15.256830 [info ] [MainThread]: 
+[0m15:32:15.257082 [info ] [MainThread]: Finished running 2 view models, 1 table model, 4 data tests in 0 hours 0 minutes and 0.38 seconds (0.38s).
+[0m15:32:15.257714 [debug] [MainThread]: Command end result
+[0m15:32:15.278111 [info ] [MainThread]: 
+[0m15:32:15.278483 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m15:32:15.278715 [info ] [MainThread]: 
+[0m15:32:15.278995 [error] [MainThread]:   Compilation Error in model users_dbt_model (models/example/users_dbt_model.sql)
+  'json_extract_scalar' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m15:32:15.279222 [info ] [MainThread]: 
+[0m15:32:15.279489 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m15:32:15.279732 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m15:32:15.279940 [info ] [MainThread]: 
+[0m15:32:15.280178 [info ] [MainThread]:   compiled code at target/compiled/pgmigrate/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m15:32:15.280393 [info ] [MainThread]: 
+[0m15:32:15.280614 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=2 SKIP=3 TOTAL=7
+[0m15:32:15.282055 [debug] [MainThread]: Resource report: {"command_name": "build", "command_wall_clock_time": 1.5071626, "process_user_time": 1.718735, "process_kernel_time": 0.141077, "process_mem_max_rss": "121028608", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:32:15.282383 [debug] [MainThread]: Command `dbt build` failed at 15:32:15.282338 after 1.51 seconds
+[0m15:32:15.282634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10643aa00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e2b3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10969af70>]}
+[0m15:32:15.282870 [debug] [MainThread]: Flushing usage events
