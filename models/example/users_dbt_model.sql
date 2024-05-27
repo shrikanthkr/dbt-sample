@@ -1,4 +1,4 @@
-{{ config(materialized="users_scalar", schema="_airbyte_quarantine", tags=["top-level-intermediate"]) }}
+{{ config(alias="users_scalar",materialized="table", schema="_airbyte_quarantine", tags=["top-level-intermediate"]) }}
 -- SQL model to parse JSON blob stored in a single column and extract into separated field columns as described by the JSON Schema
 
 select
