@@ -15,4 +15,4 @@ select
     _airbyte_data ['organization']  as organization,
     _airbyte_data ['onboardingStep']  as onboarding_step,
     _airbyte_emitted_at
-from public._airbyte_raw_users
+from _airbyte_public._airbyte_raw_users
