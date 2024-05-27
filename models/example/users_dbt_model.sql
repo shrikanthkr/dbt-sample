@@ -3,7 +3,7 @@
 
 select
     _airbyte_data['_id'] as legacy_id,
-    cast(_airbyte_data['createdAt']  as start_date)  as TIMESTAMP,
+    cast(_airbyte_data['createdAt']  as TIMESTAMP)  as start_date,
     _airbyte_data ['updatedAt']  as update_date,
     _airbyte_data ['name']  as name,
     _airbyte_data ['email']  as email,
