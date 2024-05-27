@@ -13,6 +13,6 @@ select
     (_airbyte_data->>'remoteCreatedAt')::timestamptz  as remote_created_at,
     (_airbyte_data->>'employmentStatus')::text  as employment_status,
     (_airbyte_data->>'organization')::text  as organization,
-    (_airbyte_data->>'onboardingStep')::number  as onboarding_step,
+    (_airbyte_data->>'onboardingStep')::integer  as onboarding_step,
     _airbyte_emitted_at
 from _airbyte_public._airbyte_raw_users
